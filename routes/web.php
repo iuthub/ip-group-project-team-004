@@ -40,5 +40,22 @@ Route::get('testset', function () {
 Route::get('construct', function () {
     return view('construct');
 });
-
+Route::get('account', function () {
+    return view('showAcc');
+});
+Route::get('settings', function () {
+    return view('settings');
+});
+Route::get('check', function () {
+    return view('check');
+});
+Route::get('preview', function () {
+    return view('preview');
+});
+Route::get('edit', function () {
+    return view('edit');
+});
+Route::get('statistics', function () {
+    return view('statistics');
+});
 
