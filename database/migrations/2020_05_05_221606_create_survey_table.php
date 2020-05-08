@@ -15,6 +15,11 @@ class CreateSurveyTable extends Migration
     {
         Schema::create('survey', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id'); // creator
+            $table->string('title',100);
+            $table->string('subject', 50);
+            $table->string('access', 12)->default('public');
+            $table->integer('survived',10);
             $table->timestamps();
         });
     }
