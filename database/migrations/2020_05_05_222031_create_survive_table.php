@@ -15,6 +15,8 @@ class CreateSurviveTable extends Migration
     {
         Schema::create('survive', function (Blueprint $table) {
             $table->id();
+            $table->smallInteger('question_id'); // to identify for which question it belogs
+            $table->string('answer');
             $table->timestamps();
         });
     }

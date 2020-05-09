@@ -15,11 +15,11 @@ class CreateTestTable extends Migration
     {
         Schema::create('test', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id'); // creator
+            $table->smallInteger('user_id'); // creator
             $table->string('title',100);
             $table->string('subject', 50);
             $table->string('access', 12)->default('public');
-            $table->integer('survived',10);
+            $table->integer('survived');
             $table->timestamps();
         });
     }

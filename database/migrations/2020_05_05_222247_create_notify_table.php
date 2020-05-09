@@ -15,6 +15,10 @@ class CreateNotifyTable extends Migration
     {
         Schema::create('notify', function (Blueprint $table) {
             $table->id();
+            $table->smallInteger('user_id'); // sender id
+            $table->smallInteger('receiver_id'); // receiver id
+            $table->string('message'); // notification message
+            $table->string('url',25); // we can also use url for event notification
             $table->timestamps();
         });
     }

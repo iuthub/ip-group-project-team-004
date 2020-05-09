@@ -15,7 +15,7 @@ class CreateProblemTable extends Migration
     {
         Schema::create('problem', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('test_id'); // to identify for which test it belogs
+            $table->smallInteger('test_id'); // to identify for which test it belogs
             $table->string('file',35);
             $table->string('img',35);
             $table->string('text');

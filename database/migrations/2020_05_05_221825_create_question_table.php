@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,8 +15,12 @@ class CreateQuestionTable extends Migration
     {
         Schema::create('question', function (Blueprint $table) {
             $table->id();
+            $table->smallInteger('survey_id'); // to identify for which survey it belogs
+            $table->string('question',100);
+            $table->string('img',35);
+            $table->string('variants'); // array of variants(I use serialize() to convert it to string)
             $table->timestamps();
-        });
+          });
     }
 
     /**

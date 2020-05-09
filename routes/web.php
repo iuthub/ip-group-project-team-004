@@ -13,12 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('main', function () {
-    return view('main');
-});
+Route::get('/', 'MainController@index');
 Route::get('register', function () {
     return view('register');
 });
+
 Route::get('login', function () {
     return view('login');
 });

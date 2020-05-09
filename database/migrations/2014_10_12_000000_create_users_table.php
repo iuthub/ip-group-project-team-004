@@ -22,9 +22,9 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('passport_num');
             $table->integer('phone_num');
-            $table->integer('work',10);
-            $table->integer('subs',10);
-            $table->integer('survived',10);
+            $table->integer('work');
+            $table->integer('subs');
+            $table->integer('survived');
             $table->boolean('show_subs')->default(0);
             $table->boolean('show_work')->default(0);
             $table->boolean('show_bio')->default(0);
