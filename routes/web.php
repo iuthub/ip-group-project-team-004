@@ -14,13 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'MainController@index');
-Route::get('register', function () {
-    return view('register');
-});
-
-Route::get('login', function () {
-    return view('login');
-});
+Route::get('statistics', 'TestController@index');
+Route::get('login','loginController@index');
 Route::get('survey', function () {
     return view('surveyCreate');
 });
@@ -54,7 +49,5 @@ Route::get('preview', function () {
 Route::get('edit', function () {
     return view('edit');
 });
-Route::get('statistics', function () {
-    return view('statistics');
-});
+
 
