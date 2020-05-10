@@ -19,8 +19,8 @@
           <!-- Survey Create-->
           <section class="projects no-padding-top">
            	 <div class="content">
-         
-                 {!! Form::open(['url'=> survey.set]) !!}
+
+          
              
                  <form class="p-3 bg-white">
                     <h3>General Info:</h3>
@@ -55,7 +55,7 @@
                     </div>
                     <button id="send" type="submit" class="btn btn-success" >Next</button>
 
-                    </form> {!! Form::clouse() !!}
+                    </form> 
                 </div>
           </section>
 

@@ -16,7 +16,7 @@
             <div class="col-lg-6 bg-white">
               <div class="form d-flex align-items-center">
                 <div class="content">
-                  <form method="GET" class="form-validate">
+                  <form method="Post" class="form-validate" action="{{route('login')}}">
                     <div class="form-group">
                       <input id="login-username" type="text" name="loginUsername" required data-msg="Please enter your username" class="input-material">
                       <label for="login-username" class="label-material">email</label>
@@ -25,7 +25,8 @@
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
                     </div><button type="submit" class="btn btn-success">Submit</button>
-                  </form><small>Do not have an account? </small><a href="register" class="signup">Signup</a>
+                  </form><small>Do not have an account? </small>
+                    <button id="send" type="submit" class="btn btn-success">Login</button>
                 </div>
               </div>
             </div>
