@@ -13,11 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MainController@index');
-Route::get('statistics', 'TestController@index');
+
+
 Route::get('login','loginController@index');
+Route::get('/', 'MainController@index');
 Route::get('register','LoginController@register');
 Route::get('survey', 'SurveyController@index');
+Route::get('{survey}', 'SurveyController@getById');
+
 Route::get('pass', 'PassController@index');
 Route::get('construct', 'SurveyController@create');
+Route::get('account', 'MainController@acc');
+Route::get('statistics', 'TestController@index');
 
+Route::post('survey/set', 'SurveyController@set');

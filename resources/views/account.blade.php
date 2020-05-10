@@ -24,14 +24,11 @@
               </h2>
             </div>
           </header>
-          <!--Counts-->
-          <section class="dashboard-counts no-padding-bottom">
-            @include("widgets.count")
-          </section>
-          <!-- Surves/Works Section-->
+
           <section class="projects no-padding-top">
-          
+          	 @include("widgets.profileCard")
           </section>
+          
           <!-- Footer-->
           <footer class="main-footer">
             @include("layouts.footer")

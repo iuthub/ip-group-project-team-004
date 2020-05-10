@@ -13,14 +13,14 @@ class CreateSurveyTable extends Migration
      */
     public function up()
     {
-        Schema::create('survey', function (Blueprint $table) {
+        Schema::create('surveys', function (Blueprint $table) {
             $table->id();
             $table->smallInteger('user_id'); // creator
             $table->string('title',100);
+            $table->string('text');
             $table->string('subject', 50);
-            $table->string('access', 12)->default('public');
-            $table->integer('survived');
-            $table->timestamps();
+            $table->string('img',35);
+            $table->timestamps();   
         });
     }
 

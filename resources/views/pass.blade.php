@@ -13,17 +13,8 @@
         <!-- Left navbar -->
         @include("layouts.leftBar")
         <div class="content-inner">
-          <!--Header-->
-          <header class="page-header">
-            <div class="container-fluid">
-              <h2 class="no-margin-bottom"> 
-                <div class="avatar">
-                  <img src="img/logo-1.png" alt="..." class="img-fluid">
-                  <button type="button" class="btn btn-warning" data-target="#myModal">Create | Survey </button>
-                </div>
-              </h2>
-            </div>
-          </header>
+          
+          @include("layouts.header")
          
           <!-- Survey Create-->
           <section class="projects no-padding-top">
@@ -32,10 +23,10 @@
                   <div class="card">
                     
                     <div class="card-header d-flex align-items-center">
-                      <h5 class="h5">Survey Title </h5> |
-                      <span>Subject</span> |
+                      <h5 class="h5">{{$one->title}}</h5> |
+                      <span>{{$one->subject}}</span> |
                       <span>Khidarov Mirrakhmon</span> |
-                      <span>12:00</span>
+                      <span>{{$one->create}}</span>
                     </div>
                     <div class="card-body">
                       <!-- Quesition -->

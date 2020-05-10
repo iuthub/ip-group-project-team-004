@@ -14,17 +14,7 @@
         @include("layouts.leftBar")
         <div class="content-inner">
           <!--Header-->
-          <header class="page-header">
-            <div class="container-fluid">
-              <h2 class="no-margin-bottom"> 
-              	<div class="avatar">
-              		<img src="img/logo-1.png" alt="..." class="img-fluid">
-              		<button type="button" class="btn btn-warning" data-target="#myModal">Create | Survey </button>
-              	</div>
-              </h2>
-            </div>
-          </header>
-         
+         @include("layouts.header")
           <!-- Survey Create-->
           <section class="projects no-padding-top">
            	 <!-- Quesition-->
