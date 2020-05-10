@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'MainController@index');
 Route::get('statistics', 'TestController@index');
 Route::get('login','loginController@index');
-Route::get('survey', function () {
-    return view('surveyCreate');
-});
+Route::get('register','LoginController@register');
 Route::get('problem/', function () {
     return view('createProblem');
 });
