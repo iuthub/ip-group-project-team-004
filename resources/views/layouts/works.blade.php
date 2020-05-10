@@ -57,7 +57,7 @@
                     <div class="time"><i class="fa fa-clock-o"></i>12:00 PM </div>
                     <div class="comments"><i class="fa fa-comment-o"></i>20</div>
                     <div class="project-progress">
-                      <button type="button" class="btn btn-info">Pass</button>
+                      <a href="pass"><button type="button" class="btn btn-info">Pass</button></a>
                     </div>
                   </div>
                 </div>

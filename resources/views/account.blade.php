@@ -30,7 +30,7 @@
           </section>
           <!-- Surves/Works Section-->
           <section class="projects no-padding-top">
-           	@include("layouts.works")
+          
           </section>
           <!-- Footer-->
           <footer class="main-footer">

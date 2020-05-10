@@ -25,7 +25,7 @@
                       <input id="login-password" type="password" name="loginPassword" required data-msg="Please enter your password" class="input-material">
                       <label for="login-password" class="label-material">Password</label>
                     </div><button type="submit" class="btn btn-success">Submit</button>
-                  </form><small>Do not have an account? </small><a href="register.html" class="signup">Signup</a>
+                  </form><small>Do not have an account? </small><a href="register" class="signup">Signup</a>
                 </div>
               </div>
             </div>

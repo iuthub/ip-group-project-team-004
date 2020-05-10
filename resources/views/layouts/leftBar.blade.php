@@ -8,8 +8,8 @@
       </div>
       <span class="heading">Main</span>
       <ul class="list-unstyled">
-        <li class="active"><a href="#">My Work </a></li>
-        <li><a href="#"> <i class="icon-user"></i>Account</a></li>
+        <li class="works"><a href="#">My Work </a></li>
+        <li><a href="account"> <i class="icon-user"></i>Account</a></li>
         <li><a href="statistics"> <i class="fa fa-bar-chart"></i>Statistics </a></li>
       </ul>
     </nav>

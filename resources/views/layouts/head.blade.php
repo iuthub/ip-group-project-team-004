@@ -1,4 +1,5 @@
-    <meta charset="utf-8">
+    
+<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Survey</title>
     <meta name="description" content="">
@@ -9,4 +10,3 @@
     <link rel="stylesheet" href="css/fontastic.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
